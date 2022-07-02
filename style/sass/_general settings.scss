@@ -11,33 +11,49 @@ body {
 
 }
 
-.loading-page {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--dark-color);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 50;
+// .loading-page {
+//   width: 100%;
+//   height: 100vh;
+//   background-color: var(--dark-color);
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   z-index: 50;
+//   animation: moving-loadingP 2s;
 
-  img {
-    width: 20em;
-    animation: moving-img 1.5s ease-in;
-  }
 
-  @keyframes moving-img {
-    0% {
-      width: 0;
-    }
+//   img {
+//     width: 20em;
+//     animation: moving-img 1.5s ease-in;
+//   }
 
-    100% {
-      width: 20em;
-    }
-  }
-}
+//   @keyframes moving-loadingP {
+//     0% {
+//       opacity: 0;
+//     }
+
+//     50% {
+//       opacity: 1;
+//     }
+
+//     100% {
+//       display: none;
+//     }
+//   }
+
+//   @keyframes moving-img {
+//     0% {
+//       width: 0;
+//     }
+
+//     100% {
+//       width: 20em;
+//     }
+//   }
+// }
 
 .container {
   width: 85%;
