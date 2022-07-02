@@ -115,3 +115,11 @@ singInBtn.addEventListener("click", () => {
 singInCancelBtn.addEventListener("click", () => {
   singInPage.style.display = 'none'
 })
+
+
+
+// Animation ----------------------------
+let loadingPage = document.querySelector(".loading-page")
+window.addEventListener("load", () => {
+  loadingPage.style.display = 'none'
+})

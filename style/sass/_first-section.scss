@@ -1,9 +1,8 @@
 .section-1 {
-  width: 200vw;
+  width: 100%;
   background-color: white;
   display: flex;
   overflow-x: hidden;
-  animation: moving1 7s ease-in infinite alternate;
   margin-bottom: 2em;
 
   @keyframes moving1 {
@@ -24,7 +23,9 @@
     }
   }
 
-  .container {
+  .big-container {
+    width: 200vw;
+    animation: moving1 7s ease-in infinite alternate;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -33,9 +34,24 @@
 
     @include breakPoints(mobile) {
       margin: 0;
-      align-items: flex-start;
+    }
+
+    @include breakPoints(small) {
+      margin: 0;
+    }
+  }
+
+  .container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    @include breakPoints(mobile) {
+      margin: 0;
       flex-direction: column-reverse;
-      justify-content: flex-end;
+
     }
 
     @include breakPoints(small) {
